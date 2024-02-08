@@ -1,0 +1,447 @@
+html{
+    margin:0;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color:rgb(74, 74, 74);
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row; /*flex box layout-having left and right elements*/
+    height:100vh; 
+    width:100vw; 
+}
+
+.flex-container--image{
+    width:60%;
+    height:100%;
+    padding: 4rem;
+    padding-top:8rem;
+    padding-left:5rem;
+    margin-right:4rem;
+}
+
+.flex-container--image img{ 
+    width:100%;
+    height:100%;
+}
+
+.flex-container--content{
+    width:30%;
+    height:100vh;
+    overflow:scroll;/*scrolling effect for this section only so the right side will be scrolling*/
+    font-size: small;
+    padding:2rem;
+    margin:1rem;
+    border-left:1px solid #ffffff;
+}
+
+.flex-container--content:hover{
+    border-left:1px solid  rgb(229, 229, 229);
+}
+
+.flex-container--header{
+    color:rgb(206, 206, 206);
+    display:flex;
+    justify-content:end;
+    font-size: small;
+}
+
+.flex-container--header:hover{
+    color:rgb(182, 182, 182);
+}
+
+.description{
+    font-size: smaller;
+    opacity:70%;
+    line-height: 0.6rem;
+    margin-bottom:2rem;
+}
+
+.content-actions{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid;
+    padding:1rem;
+    opacity:70%;
+    margin-bottom:2rem;
+}
+
+.options{
+    font-weight:bold;
+    line-height: 0.6rem;
+}
+.content-toggle--container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.content-toggle{
+    width:50%; 
+    text-align:center;
+    padding:1rem/*vertical*/ 2rem/*horizontal*/;
+}
+
+.content-toggle.active{
+    border-bottom: 1px solid rgb(74, 74, 74)
+}
+
+.content-connections{
+    margin-top:1.5rem;
+}
+
+.button-container{
+    text-align: center;
+}
+.button-connect{
+    box-sizing: border-box;
+    border:2px solid rgb(210, 210, 210);
+    text-align: center;
+    padding-left: 5rem;
+    padding-right:5rem;
+    margin-top:2rem;
+    margin-bottom:3rem;
+    width:auto;
+    display: inline-block;
+    border-radius:0.25rem;
+}
+
+.button-connect:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.date{
+    font-size: xx-small;
+    opacity:70%;
+}
+
+.button-drawer{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-drawer:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-class{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-class:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-megalodon{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-megalodon:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-internet{
+    box-sizing: border-box;
+    border:2px solid rgb(147, 229, 164);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    color: rgb(51, 175, 86);
+    padding-left:2rem;
+}
+.button-internet:hover{
+    border:2px solid rgb(51, 175, 86);
+}
+
+.button-haha{
+    box-sizing: border-box;
+    border:2px solid rgb(147, 229, 164);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    color: rgb(51, 175, 86);
+    padding-left:2rem;
+}
+
+.button-haha:hover{
+    border:2px solid rgb(51, 175, 86);
+}
+
+.button-interest{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-interest:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-got{
+    box-sizing: border-box;
+    border:2px solid rgb(147, 229, 164);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    color: rgb(51, 175, 86);
+    padding-left:2rem;
+}
+
+.button-got:hover{
+    border:2px solid rgb(51, 175, 86);
+}
+
+.button-private{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-private:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-memes{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-memes:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-\003A{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-\003A:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-good{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+
+.button-good:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-lol{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-lol:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-mat{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+
+.button-mat:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-melody{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-melody:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-deep{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-deep:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-you{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+
+.button-you:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-inspo{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+
+.button-inspo:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-trove{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-trove:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-holy{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-holy:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-it{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-it:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-cute{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+
+.button-cute:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-another{
+    box-sizing: border-box;
+    border:2px solid  rgb(147, 229, 164);
+    align-items:center;
+    padding: 1rem;
+    color: rgb(51, 175, 86);
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+}
+
+.button-another:hover{
+    border:2px solid rgb(51, 175, 86);
+}
+
+.button-meme{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    margin-bottom:2rem;
+    padding-left:2rem;
+}
+   
+.button-meme:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.button-will{
+    box-sizing: border-box;
+    border:2px solid rgb(193, 193, 193);
+    align-items:center;
+    padding: 1rem;
+    padding-left:2rem;
+}
+
+.button-will:hover{
+    border:2px solid rgb(74, 74, 74);
+}
+
+.load{
+    text-align: center;
+    margin-top:3rem;
+    margin-bottom:4rem;
+    color:rgb(193, 193, 193);
+}
+
+.load:hover{
+    color:rgb(74, 74, 74);
+}
